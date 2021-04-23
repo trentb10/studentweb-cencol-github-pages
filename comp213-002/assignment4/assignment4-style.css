@@ -1,0 +1,101 @@
+﻿/*
+ *
+ * Assignment 4 Styling Colours:
+ * 
+ * Main          White          #FFFFFF
+ * Accent1       UofT Blue      #002f65
+ * 
+ */
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+::selection {
+	background: #002f65;
+	color: #ffffff;
+}
+::-moz-selection {
+	background: #002f65;
+	color: #ffffff;
+}
+a, a:visited, a:hover, a:active {
+	border-bottom-style: solid;
+	border-width: thin;
+	color: #002f65;
+	text-decoration: none;
+}
+a:hover {
+	color: #002f65;
+}
+a:active {
+	background-color: #002f65;
+	color: #ffffff;
+}
+body {
+	background-color: #002f65;
+	color: #ffffff;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+div.centreContent {
+	text-align: center;
+}
+div.mainBody {
+	background: #ffffff;
+	color: #002f65;
+	border-radius: 12px;
+	margin: 30px auto 30px auto;
+	padding: 10px 10px 60px 10px;
+	width: 980px;
+}
+div.mainBody ::selection {
+	background: #002f65;
+	color: #ffffff;
+}
+div.mainBody ::-moz-selection {
+	background: #002f65;
+	color: #ffffff;
+}
+fieldset {
+	border: thin solid #002f65;
+	border-radius: 6px;
+	margin: 10px 0px 10px 0px;
+}
+footer {
+	background-color: rgb(0,0,0,0.5);
+	border-radius: 12px;
+	color: #ffffff; 
+	font-size: 0.8125em;
+	margin: 30px auto 40px auto;
+	padding: 10px 10px 10px 10px;
+	width: 980px;
+}
+header {
+	background-color: #ffffff;
+	border-radius: 12px;
+	margin: 30px auto 30px auto;
+	padding: 10px 10px 10px 20px;
+	width: 980px;
+}
+h1 {
+	color: #002f65;
+	margin: 10px auto 10px auto;
+	text-align: center;
+}
+input, textarea {
+	color: #002f65;
+}
+label.courseInformation {
+	float: left;
+	margin-right: 2px;
+	text-align: right;
+	width: 250px;
+}
+legend {
+	background-color: #002f65;
+	border-radius: 6px;
+	color: #ffffff;
+	padding: 8px;
+}

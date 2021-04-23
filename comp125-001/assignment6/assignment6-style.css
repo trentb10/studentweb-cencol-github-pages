@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+	background-color: #212121;
+	background-attachment: fixed;
+	color: #ffffff;
+	font-family: "PT Sans", Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+header {
+    align-self: center;
+    margin: 0 0 20px 0;
+    color: #f26993;
+}
+
+p {
+    margin: 12px 0 0 0;
+}
+
+a, a:visited {
+	border-bottom-style: solid;
+	border-width: thin;
+	color: #ffffff;
+	text-decoration: none;
+	transition-property: color;
+	transition-duration: 0.18s;
+}
+
+a:hover {
+	color: #76eb15;
+}
+
+a:active {
+	color: #f26993;
+	transition-duration: 0s;
+}
+
+.footer-content {
+	color: #f26993; 
+	font-size: 0.8125em;
+	max-width: 1024px;
+	margin: 0 auto 0 auto;
+}
+
+.galleryMain {
+    width: 1060px;
+    display: block;
+    height: 540px;
+    align-self: center;
+    position: relative;
+    background-color: #fff;
+}
+.galleryImg {
+    height: 480px;
+    width: 960px;
+    margin: auto;
+}
+
+.galleryImg img {
+    height: auto;
+    width: 960px;
+}
+
+/* Disable text selection for the arrows */
+
+.galleryPrevious, .galleryNext {
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none;
+
+}
+
+.galleryPrevious, .galleryNext {
+    height: 100%;
+    width: 50px; 
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0a0a0a;
+    cursor: pointer;
+}
+
+.previousArrow, .nextArrow {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 50px;
+    padding: 6px;
+    color: #fff;
+    align-self: center;
+}
+
+.galleryNext {
+    right: 0;
+    left: auto;
+}

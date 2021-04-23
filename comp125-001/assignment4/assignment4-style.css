@@ -1,0 +1,90 @@
+#accountDetails {
+	display: none;
+	max-width: inherit;
+	padding: 0 20px 0 20px;
+	width: 100%;
+}
+
+#accountDetails h2 {
+	text-align: center;
+}
+
+button {
+	border: none;
+	font-family: Share Tech Mono, monospace;
+	font-size: 16px;
+	margin: 10px;
+	padding: 10px;
+    text-transform: uppercase;
+    transition-duration: 0.2s;
+}
+
+#btnRegister {
+    background: #343434;
+    color: #76eb15;
+}
+
+#btnRegister:hover {
+	background: #76eb15;
+    color: #343434;
+}
+
+#btnReset {
+    background: #343434;
+    color: #ff8016;
+}
+
+#btnReset:hover {
+	background: #ff8016;
+    color: #343434;
+}
+
+fieldset {
+	border: thin solid #10b6b6;
+	border-radius: 12px;
+	margin: 10px 0px 10px 0px;
+}
+
+.form-buttons {
+	display: flex;
+	justify-content: center;
+}
+
+h3 {
+	color: #f9bb00;
+	font-weight: normal;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+label {
+	float: left;
+	margin-right: 10px;
+	text-align: right;
+	width: 180px;
+}
+
+legend {
+	background-color: #10b6b6;
+	border-radius: 24px;
+	color: #212121;
+	padding: 8px;
+}
+
+#pwdMatchError, #ageError {
+	color: red;
+	font-family: monospace;
+	display: none;
+}
+
+/*
+
+    .          
+   _|________________         
+    |  .--.--. 
+    |  |  |  | 
+  `-`--'  '  `-
+
+*/

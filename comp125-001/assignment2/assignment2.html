@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!-- Created by Trent B Minia 190603 -->
+
+<html lang="en-ca">
+    
+<head>
+    <title>Dynamic Table Creator - COMP125</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Share+Tech+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../../styles/trentb10-style-legacy.css">
+    <link rel="stylesheet" type="text/css" href="assignment2-style.css">
+</head>
+
+<body>
+    <div class="imageHeader">
+		<img class="header" src="images/header.png" alt="table" style="background-color:white;"> 	
+    </div>
+    
+    <header>
+        <h1>Dynamic Table Creator</h1>
+    </header>
+
+    <div class="mainBody">
+        <form>
+            <fieldset><legend>Customize Table</legend>
+                <p>
+                    You can enter the number of rows and columns to create.
+                </p>
+                <p>
+                    <label for="numberRows"># of Rows [1-15]: </label>
+                    <input id ="numberRows" name="numberRows" min="1" max="15" size="5" type="number">
+                </p>
+                <p>
+                    <label for="numberColumns"># of Columns [1-15]: </label>
+                    <input id ="numberColumns" name="numberColumns" min="1" max="15" size="5" type="number">
+                </p>
+            </fieldset>
+        </form>
+
+        <div style="text-align:center; margin-bottom:10px;">
+            <input name="btnCreateTable" id="btnCreateTable" type="button" value="Create Table">
+            <input name="btnReset" id="btnReset" type="button" value="Reset">
+        </div>
+
+        <div id="tableArea">
+            <span id="table"></span>
+        </div>
+
+        <p>
+            <a href="../../index.html">&lt; Back to Index</a>
+        </p>
+
+        <script src="assignment2-script.js"></script>
+    </div>
+
+    <footer><p>Assignment 2 &copy;&nbsp;Trent B Minia - COMP 125 - Summer 2019</p></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<!-- Created by Trent B Minia 190314 -->
+
+<html lang="en-ca">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Week 09 Class Example</title>
+<link href="../../tminus10-style-legacy.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div class="imageHeader">
+	<img alt="centennial college logo" height="209" src="images/CC50thAnniversary.jpg" width="200">
+</div>
+
+<header>
+	<h1>Centennial College - Registration Form</h1>
+</header>
+
+<div class="mainBody">
+	<form method="post" action="mailto:lol">
+		<table style="width: 100%">
+			<tr>
+				<td>First Name:</td>
+				<td> <input name="txtFirstName" type="text" size="25" tabindex="1"></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td> <input name="txtLastName" type="text" size="25" tabindex="3"></td>
+			</tr>
+			<tr>
+				<td>Email Address:</td>
+				<td> <input name="txtEmailAddress" type="text" size="30" tabindex="5"></td>
+			</tr>
+			<tr>
+				<td>Create Password:</td>
+				<td> <input name="txtPasswordCreate" type="password" size="16" tabindex="7"></td>
+			</tr>
+			<tr>
+				<td style="height: 29px">Confirm Password:</td>
+				<td style="height: 29px"> <input name="txtPasswordConfirm" type="password" size="16" tabindex="9"></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td> 
+				<input name="opGender" type="radio" tabindex="11" value="Male" checked="true">Male <input name="opGender" type="radio" tabindex="13" value="Female">Female <input name="opGender" type="radio" tabindex="15" value="X">X</td>
+			</tr>
+			<tr>
+				<td>Education:</td>
+				<td> 
+				<input name="opEducation" type="radio" tabindex="17" value="Secondary" checked="true">Secondary <input name="opEducation" type="radio" tabindex="19" value="Undergraduate">Undergraduate <input name="opEducation" type="radio" tabindex="21" value="Graduate">Graduate <input name="opEducation" type="radio" tabindex="23" value="PostGraduate">Post-Graduate</td>
+			</tr>
+			<tr>
+				<td>Computer Knowledge:</td>
+				<td> 
+			<input name="chkKnowledge1" type="checkbox" value="chkDatabase" tabindex="25"/>Database 
+			<input name="chkKnowledge2" type="checkbox" value="chkOS" tabindex="27"/>OS 
+			<input name="chkKnowledge3" type="checkbox" value="chkNetworking" tabindex="29"/>Networking 
+			<input name="chkKnowledge4" type="checkbox" value="chkProgramming" tabindex="31"/>Programming 
+			<input name="chkKnowledge" type="checkbox" value="chkWebDesign" tabindex="33"/>Web Design
+				</td>
+			</tr>
+			<tr>
+				<td>Select Courses:</td>
+				<td>
+			<select name="lstSelectCourses" multiple="multiple" tabindex="35">
+				<option value="comp100">COMP 100: Programming I</option>
+				<option value="comp213">COMP 213: Web Design</option>
+				<option value="comp215">COMP 215: Client Side Development</option>
+				<option value="comp225">COMP 225: Systems Analysis I</option>"
+				<option value="comp229">COMP 229: Server Side Development</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td>Special Requests:</td>
+				<td>
+			<textarea name="txtRequests" rows="5" tabindex="37" class="auto-style1" style="width: 563px">Please indicate any support services you require for learning.</textarea></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>	<button name="btnSubmit" tabindex="39" type="submit" value="Submit Form">Submit</button>
+		<button name="btnReset" tabindex="41" type="reset" value="Reset Form">Reset</button>
+	</form>
+	<p><a href="../comp213-home.html">&lt; Back to COMP213 - Home</p>
+</div>
+<footer>
+	&copy;&nbsp;Trent B Minia - COMP 213 - Winter 2019
+</footer>
+
+</body>
+
+</html>

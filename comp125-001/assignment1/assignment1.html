@@ -1,0 +1,123 @@
+<!doctype html>
+
+<!-- Created by Trent B Minia | 190528 -->
+
+<html lang="en-ca">
+
+<head>
+	<title>Basal Metabolic Rate Calculator - COMP 125</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assignment1-style.css">
+	<link rel="stylesheet" type="text/css" href="../../styles/trentb10-style-legacy.css">
+</head>
+
+<body>
+	<div class="imageHeader">
+		<img class="header" src="images/header.png" alt="basal metabolic rate calculator" style="background-color:white;"> 	
+	</div>
+
+	<header>
+		<h1>Basal Metabolic Rate Calculator</h1>
+	</header>
+	
+	<div class="mainBody">
+		<p>
+			Calculate your Basal Metabolic Rate (BMR) by entering your height, weight, and age in the fields below, as well as selecting your gender and activity level.
+		</p>
+
+		<p>
+			You can customize the calculator by setting the units and formula.
+		</p>
+
+		<form>
+			<fieldset><legend>Customize</legend>
+				<p>
+					<label for="formula">Formula: </label>
+					<select id="formula" name="formula">
+						<option value="formulaHB">Original Harris - Benedict</option>
+						<option value="formulaMS">Mifflin - St Jeor</option>
+					</select>
+				</p>
+				<p>
+					<label for="units">Units:</label>
+					<select id="units" name="units">
+						<option value="unitMetric">Metric</option>
+						<option value="unitImperial">Imperial</option>
+					</select>
+				</p>
+			</fieldset>
+
+			<fieldset><legend>Calculate BMR</legend>
+				<!-- metric -->
+				<div id="metric"><p>
+					<label for="heightcm">Height (cm): </label>
+					<input id ="heightcm" name="heightcm" min="0" size="3" type="number" required="required">
+				</p>
+				<p>
+					<label for="weightkg">Weight (kg): </label>
+					<input id ="weightkg" name="weightkg" min="0" size="3" type="number" required="required">
+				</p></div>
+				<!-- imperial -->
+				<div id="imperial"><p>
+					<label for="heightft">Height (ft): </label>
+					<input id ="heightft" name="heightcm" min="0" size="3" type="number" required="required">
+				</p>
+				<p>
+					<label for="heightin">Height (in): </label>
+					<input id ="heightin" name="heightcm" min="0" size="3" type="number" required="required">
+				</p>
+				<p>
+					<label for="weightlb">Weight (lb): </label>
+					<input id ="weightlb" name="weightlb" min="0" size="3" type="number" required="required">
+				</p></div>
+				<!-- personal info & activity level -->
+				<p>
+					<label for="age">Age: </label>
+					<input id ="age" name="age" min="0" size="3" type="number" required="required">
+				</p>
+				<p>
+					<label>Gender: </label>
+					<input id="genderM" name="gender" type="radio" value="genderM" required="required">Male
+					<input id="genderF" name="gender" type="radio" value="genderF" checked>Female
+				</p>
+				<p>
+					<label>Activity Level: </label>
+					<input id="activityLevelLow" name="activityLevel" type="radio" value="activityLevelLow" required="required" checked>Light exercise (1.4)
+					<input id="activityLevelMed" name="activityLevel" type="radio" value="activityLevelMed">Moderate exercise (1.7)
+					<input id="activityLevelHigh" name="activityLevel" type="radio" value="activityLevelHigh">Vigorous exercise (2)
+				</p>
+			</fieldset>
+			<div style="text-align:center; margin-bottom:2px;">
+				<input name="btnCalculate" id="calculate" type="button" value="Calculate">
+				<button name="btnReset" type="reset">Reset</button>
+			</div>
+		</form>
+
+		<div class="result">
+			<p>
+				Your Basal Metabolic Rate (BMR) is: 
+			</p>
+			<p>
+				<span id="bmr">&nbsp;</span>
+			</p>
+			<p>
+				and your Total Energy Expenditure (TEE) is: 
+			</p>
+			<p>
+				<span id="tee">&nbsp;</span>
+			</p>
+		</div>
+
+		<p>
+			<a href="../../index.html">&lt; Back to Index</a>
+		</p>
+
+		<script src="assignment1-script.js"></script>
+	</div>
+
+	<footer><p>Assignment 1 &copy;&nbsp;Trent B Minia - COMP 125 - Summer 2019</p></footer>
+
+</body>
+
+</html>

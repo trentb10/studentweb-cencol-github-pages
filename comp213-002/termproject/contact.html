@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en-ca" dir="ltr">
+
+<!-- #BeginTemplate "termproject-template.dwt" -->
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<!-- #BeginEditable "doctitle" -->
+	<title>Contact Us</title>
+	<!-- #EndEditable -->
+	<link href="termproject-tm-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="header" style="position: absolute; left: 0px; top: 0px; width: 980px; height: 100px; z-index: 1">
+		<h1 id="imageHeaderText">Nue Manson &amp; Associates</h1>
+		<h3 id="contactHeaderText">
+			Agent Nue Manson &amp; Associates<br>
+			Email: nuemanson@do.main<br>
+			Phone #: 213-555-0113 
+		</h3>
+	</div>
+	
+	<div class="navigation" style="position: absolute; left: 0px; top: 100px; width: 190px; height: 500px; z-index: 2">
+		<ul class="noBulletList">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="properties.html">List of Properties</a></li>
+		</ul>
+		<ul class="propertiesList">
+			<li><a href="properties-skytowercondo.html">Sky Tower Condo</a></li>
+			<li><a href="properties-cozypalmsidemansion.html">Cozy Palmside Mansion</a></li>
+			<li><a href="properties-pleasanthillplace.html">Pleasant Hill Place</a></li>
+			<li><a href="properties-oceansideview.html">Oceanside View</a></li>
+			<li><a href="properties-heavenlycorner.html">Heavenly Corner</a></li>
+			<li><a href="properties-eternalevergreens.html">Eternal Evergreens</a></li>
+		</ul>
+		<ul class="noBulletList">
+			<li><a href="Contact.html">Contact Us</a></li>
+			<li><a href="sitemap.html">Site Map</a></li>
+			<li><a href="../comp213-home.html">&lt;&nbsp;Back to COMP213 - Home</a></li>
+		</ul>
+	</div>
+	
+	<div class="content" style="position: absolute; left: 200px; top: 100px; width: 780px; height: 500px; z-index: 3">
+	<!-- #BeginEditable "content" -->
+		<h1>Contact Us</h1>
+		
+		<p>
+			If you have your own preferences for the type of property you are interested in, fill in the form below:
+		</p>
+		
+		<form action="mailto:blah@bl.ah" method="post">
+			<fieldset>
+				<p>
+					<label for="txtFirstName">First Name:</label>
+					<input id ="txtFirstName" name="txtFirstName" size="25"type="text" required="required" tabindex="1">
+				</p>
+				<p>
+					<label for="txtLastName">Last Name:</label>
+					<input id ="txtLastName" name="txtLastName" size="25" type="text" required="required" tabindex="3">
+				</p>
+				<p>
+					<label for="telPhoneNumber">Phone #:</label>
+					<input id ="telPhoneNumber" name="telPhoneNumber" size="25" type="tel" required="required" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" tabindex="5">
+				</p>
+				<p>
+					<label for="txtEmail">Email Address:</label>
+					<input id ="txtEmail" name="txtEmail" size="25" type="email" required="required" placeholder="your@email.address" tabindex="7">
+				</p>
+				<p>
+					<label for="optPropertyType">Type of Property:</label>
+					<input id="optPropertyHouse" name="optPropertyType" type="radio" value="House" tabindex="9">House
+					<input id="optPropertyCondo" name="optPropertyType" type="radio" value="Condominium" tabindex="11">Condominium
+				</p>
+				<p>
+					<label for="numBedrooms">Number of Bedrooms:</label>
+					<input id ="numBedrooms" name="numBedrooms" type="number" required="required" size="4" min="1" max="9" tabindex="13">
+				</p>
+				<p>
+					<label for="numBathrooms">Number of Bathrooms:</label>
+					<input id ="numBathrooms" name="numBathrooms" type="number" required="required" size="4" min="1" max="9" tabindex="15">
+				</p>
+				<p>
+					<label for="numPriceMin">Min. Price Range:</label>
+					<input id ="numPriceMin" name="numPriceMin" type="number" required="required" placeholder="0.00" min="0" step="0.01" size="5" tabindex="17">
+				</p>
+				<p>
+					<label for="numPriceMax">Max. Price Range:</label>
+					<input id ="numPriceMax" name="numPriceMax" type="number" required="required" placeholder="0.00" min="0" step="0.01" size="5" tabindex="19">
+				</p>
+				<p>
+					<label for="txtAdditionalComments">Additional Comments:</label>
+					<textarea id="txtAdditionalComments" cols="50" name="txtOther" rows="7" tabindex="21" placeholder="--- Please enter additional comments that would help us with your request. ---"></textarea>
+				</p>
+
+			</fieldset>
+			
+			<div class="formSubmit">
+				<input name="btnSubmit" tabindex="99" type="submit" value="Submit Request">
+				<input name="btnReset" tabindex="101" type="reset" value="Clear">
+			</div>
+			
+		</form>
+
+	<!-- #EndEditable -->
+	</div>
+	
+	<div class="footerdiv" style="position: absolute; left: 0px; top: 600px; width: 980px; height: 100px; z-index: 4">
+		<footer>
+			<p>&copy;&nbsp;Trent B Minia - COMP 213 - Winter 2019</p>
+			<nav>
+				<a href="home.html">Home</a> |
+				<a href="properties.html">List of Properties</a> |
+				<a href="Contact.html">Contact Us</a> |
+				<a href="sitemap.html">Site Map</a>
+				<p><a href="../comp213-home.html">&lt;&nbsp;Back to COMP213 - Home</a></p>
+			</nav>
+		</footer>
+	</div>
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

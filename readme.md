@@ -1,0 +1,1 @@
+This is the github pages implementation build for [trentb10/studentweb-cencol](https://github.com/trentb10/studentweb-cencol).

@@ -1,0 +1,209 @@
+/*
+ *
+ * 	Last Modifited 190611
+ *
+ *	Legacy colours used to style trentb10/studentweb-cencol
+ *
+ *	Styling Colours:
+ *
+ *	Main Colour    Blue          #50ffff
+ *	Background1    Black         #212121
+ *	Background2    Dark Purple   #13001d
+ *	Accent1        Pink          #ff5085
+ *	Accent2        Orange        #ffd350
+ *	Accent3        Green         #9fff50
+ *	Accent4        Lite Purple   #6a6aff
+ * 
+ */
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+::selection {
+	background: #ff5085;
+	color: #212121;
+}
+::-moz-selection {
+	background: #ff5085;
+	color: #212121;
+}
+a, a:visited {
+	border-bottom-style: solid;
+	border-width: thin;
+	color: #50ffff;
+	text-decoration: none;
+}
+a:hover {
+	color: #9fff50;
+}
+a:active {
+	color: #ff5085;
+}
+blockquote {
+	border-left: 0.125em solid #50ffff;
+	margin-left: 10px;
+}
+blockquote p {
+	padding-left: 10px;
+}
+blockquote q {
+	font-size: 1.125em;
+	font-style: italic;
+	font-weight: bold;
+}
+blockquote cite {
+	font-style: normal;	
+}
+body {
+	background: repeating-linear-gradient(
+		135deg,
+		#121212,
+		#121212 5px,
+		#1a1a1a 5px,
+		#1a1a1a 10px
+	);
+	background-color: #212121;
+	background-attachment: fixed;
+	color: #50ffff;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 16px;
+}
+div.imageHeader {
+	background-color: #212121;
+	box-shadow: 0px 5px 2px #000000;
+	margin: 40px auto 30px auto;
+	width: 980px;
+}
+div.mainBody {
+	background-color: #13001d;
+	border-top: 5px solid #50ffff;
+	box-shadow: 0px 5px 2px #000000;
+	margin: 30px auto 30px auto;
+	padding: 10px 10px 60px 10px;
+	width: 980px;
+}
+div.mainBody ::selection {
+	background: #50ffff;
+	color: #212121;
+}
+div.mainBody ::-moz-selection {
+	background: #50ffff;
+	color: #212121;
+}
+footer {
+	background-color: #212121;
+	border-top: 5px solid #ff5085;
+	border-top-style: solid;
+	border-width: 5px;
+	box-shadow: 0px 5px 2px #000000;
+	color: #ff5085; 
+	font-size: 0.8125em;
+	margin: 30px auto 40px auto;
+	padding: 10px 10px 10px 10px;
+	width: 980px;
+}
+footer a, footer a:visited {
+	color: #ff5085;
+}
+footer a:hover{
+	color: #9fff50;
+}
+footer a:active {
+	color: #50ffff;
+}
+header {
+	background-color: #212121;
+	border-top: 5px solid #ff5085;
+	box-shadow: 0px 5px 2px #000000;
+	margin: 30px auto 30px auto;
+	padding: 10px 10px 10px 20px;
+	width: 980px;
+}
+h1 {
+	color: #ff5085;
+}
+h2 {
+	color: #ffd350;
+	font-weight: normal;
+}
+hr {
+	border-color:#ff5085;
+	border-style: solid;
+	border-width: 0.125em;
+}
+img.header { /* for use inside div.imageHeader only. image size 980x200 */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+}
+td, th {
+	padding: 8px;
+	text-align: left;
+}
+th {
+	background-color: #50ffff;
+	color: #212121;
+}
+tr:nth-child(even) {
+	background-color: rgb(255,255,255,0.2);
+}
+tr:nth-child(odd) {
+	background-color: rgb(0,0,0,0.4);
+}
+ul.noBulletList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* navigation bar */
+
+.navigationBar {
+	background-color: #212121;
+    border-top: 5px solid #ff5085;
+    box-shadow: 0px 5px 2px #000000;
+	font-size: 16px;
+    font-weight: bold;
+    margin: 30px auto 30px auto;
+	padding: 10px 5px 10px 5px;
+    position: sticky; top: 0;
+	width: 980px;
+}
+
+.navigationBar a {
+	border-bottom-style: none;
+	color: #ff5085;
+	padding: 0 5px 0 5px;
+	text-align: center;
+}
+
+.navigationBar a:hover {
+	color: #9fff50;
+}
+
+/* buttons */
+
+select, input[type=button], [type=number], [type=reset], [type=submit], [type=text] {
+	background: #212121;
+	border: none;
+	color: #9fff50;
+	font-family: Share Tech Mono, monospace;
+	font-size: 16px;
+	padding: 2px;
+}
+input[type=button], [type=reset], [type="submit"] {
+	background: #212121;
+	border: none;
+	color: #50ffff;
+	font-family: Share Tech Mono, monospace;
+	font-size: 28px;
+	padding: 16px;
+	text-transform: uppercase;
+}

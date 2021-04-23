@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+
+<!-- Created by Trent B Minia #301041132 | 190401 -->
+
+<html lang="en-ca">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Assignment 4 - COMP 213</title>
+<meta content="comp 213, assignment4, html, css, forms" name="keywords">
+<meta content="Assignment 3 for COMP 213 to show that I can create forms!" name="description">
+<link href="assignment4-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<a href="https://www.utoronto.ca/"><img alt="University of Toronto logo" height="100px" width="auto" src="images/kisspng-university-of-toronto-logo-organization-brand-font-5b596762398357.5008110815325858262356.png" style="display:block; margin-left:auto; margin-right:auto;"></a>
+		<h1>Continuing Studies Course & Instructor Evaluation</h1>
+	</header>
+
+	<div class="mainBody">
+		<p>
+			Instructions: Please read each statement carefully and consider each one individually. You may <b>only make one selection per question</b>.
+		</p>
+
+		<form action="mailto:blah@bl.ah" method="post">
+			<fieldset><legend>Course Information</legend>
+				<p>
+					<label class="courseInformation" for="txtCourseName">Course Name:</label>
+					<input id ="txtCourseName" name="txtCourseName" size="25" tabindex="1" type="text" required="required">
+				</p>
+				<p>
+					<label class="courseInformation" for="txtCourseCode">Course Code:</label>
+					<input id="txtCourseCode" maxlength="4" name="txtCourseName" placeholder="Example: 3407" size="25" tabindex="3"
+					type="text" required="required"><br>
+				</p>
+				<p>
+					<label class="courseInformation" for="optSemesterFall">Semester:</label>
+					<input id="optSemesterFall" name="optSemester" tabindex="5" type="radio" value="Fall">Fall
+					<input id="optSemesterWinter" name="optSemester" tabindex="7" type="radio" value="F">Winter
+					<input id="optSemesterSpringSummer" name="optSemester" tabindex="9" type="radio" value="X">Spring/Summer
+				</p>
+				<p>
+					<label class="courseInformation" for="txtYear">Year:</label>
+					<input id ="txtYear" name="txtYear" size="4" tabindex="11" type="text" required="required">
+				</p>
+				<p>
+					<label class="courseInformation" for="txtInstructorName">Instructor Name:</label>
+					<input id ="txtInstructorName" name="txtInstructorName" size="25" tabindex="13" type="text" required="required">
+				</p>
+			</fieldset>
+
+			<fieldset><legend>Instructor</legend>
+				<ol start="1">
+				<p>
+					How would you rate the instructor's:
+				</p>
+				<li><label for="optKnowledgeExcellent"><b>knowledge</b> of subject?</label></li>
+				
+				<p>
+					<input id="optKnowledgeExcellent" name="optKnowledge" tabindex ="15" type="radio" value="Excellent">Excellent
+					<input id="optKnowledgeGood" name="optKnowledge" tabindex ="17" type="radio" value="Good">Good
+					<input id="optKnowledgeFair" name="optKnowledge" tabindex ="19" type="radio" value="Fair">Fair
+					<input id="optKnowledgeNotSatisfactory" name="optKnowledge" tabindex ="21" type="radio" value="Not satisfactory">Not satisfactory
+				</p>
+
+				<li><label for="optHelpfulnessExcellent"><b>helpfulness</b>?</label></li>
+				
+				<p>
+					<input id="optHelpfulnessExcellent" name="optHelpfulness" tabindex ="23" type="radio" value="Excellent">Excellent
+					<input id="optHelpfulnessGood" name="optHelpfulness" tabindex ="25" type="radio" value="Good">Good
+					<input id="optHelpfulnessFair" name="optHelpfulness" tabindex ="27" type="radio" value="Fair">Fair
+					<input id="optHelpfulnessNotSatisfactory" name="optHelpfulness" tabindex ="29" type="radio" value="Not satisfactory">Not satisfactory
+				</p>
+
+				<li><label for="optRespectExcellent"><b>courtesy and respect</b> for all students?</label></li>
+
+				<p>
+					<input id="optRespectExcellent" name="optRespect" tabindex ="31" type="radio" value="Excellent">Excellent
+					<input id="optRespectGood" name="optRespect" tabindex ="33" type="radio" value="Good">Good
+					<input id="optRespectFair" name="optRespect" tabindex ="35" type="radio" value="Fair">Fair
+					<input id="optRespectNotSatisfactory" name="optRespect" tabindex ="37" type="radio" value="Not satisfactory">Not satisfactory
+				</p>
+				
+				<li><label for="optCommunicationExcellent"><b>communication</b> skills?</label></li>
+				
+				<p>
+					<input id="optCommunicationExcellent" name="optCommunication" tabindex ="39" type="radio" value="Excellent">Excellent
+					<input id="optCommunicationGood" name="optCommunication" tabindex ="41" type="radio" value="Good">Good
+					<input id="optCommunicationFair" name="optCommunication" tabindex ="43" type="radio" value="Fair">Fair
+					<input id="optCommunicationNotSatisfactory" name="optCommunication" tabindex ="45" type="radio" value="Not satisfactory">Not satisfactory
+				</p>
+
+				<li><label for="optPerformanceExcellent">overall <b>performance</b>?</label></li>
+
+				<p>
+					<input id="optPerformanceExcellent" name="optPerformance" tabindex ="47" type="radio" value="Excellent">Excellent
+					<input id="optPerformanceGood" name="optPerformance" tabindex ="49" type="radio" value="Good">Good
+					<input id="optPerformanceFair" name="optPerformance" tabindex ="51" type="radio" value="Fair">Fair
+					<input id="optPerformanceNotSatisfactory" name="optPerformance" tabindex ="53" type="radio" value="Not satisfactory">Not satisfactory
+				</p>
+				</ol>
+			</fieldset>
+
+			<fieldset><legend>Course</legend>
+				<ol start="6">
+
+				<li><label for="optCourseMaterialsExcellent">How would you rate the <b>course materials</b>?</label></li>
+				
+				<p>
+					<input id="optCourseMaterialsExcellent" name="optCourseMaterials" tabindex ="55" type="radio" value="Excellent">Excellent
+					<input id="optCourseMaterialsGood" name="optCourseMaterials" tabindex ="57" type="radio" value="Good">Good
+					<input id="optCourseMaterialsFair" name="optCourseMaterials" tabindex ="59" type="radio" value="Fair">Fair
+					<input id="optCourseMaterialsNotSatisfactory" name="optCourseMaterials" tabindex ="61" type="radio" value="Not satisfactory">Not satisfactory
+				</p>
+
+				<li><label for="optCourseExpectationsExcellent">How much did this course meet your <b>expectations</b>?</label></li>
+
+				<p>
+					<input id="optCourseExpectationsExcellent" name="opt" tabindex ="63" type="radio" value="Excellent">Excellent
+					<input id="optCourseExpectationsGood" name="optCourseExpectations" tabindex ="65" type="radio" value="Good">Good
+					<input id="optCourseExpectationsFair" name="optCourseExpectations" tabindex ="67" type="radio" value="Fair">Fair
+					<input id="optCourseExpectationsNotSatisfactory" name="optCourseExpectations" tabindex ="69" type="radio" value="Not satisfactory">Not satisfactory
+				</p>
+
+				<li><label for="optCourseOverallExcellent">How would you rate this course <b>overall</b>?</label></li>
+
+				<p>
+					<input id="optCourseOverallExcellent" name="optCourseOverall" tabindex ="71" type="radio" value="Excellent">Excellent
+					<input id="optCourseOverallGood" name="optCourseOverallGood" tabindex ="73" type="radio" value="Good">Good
+					<input id="optCourseOverallFair" name="optCourseOverall" tabindex ="75" type="radio" value="Fair">Fair
+					<input id="optCourseOverallNotSatisfactory" name="optCourseOverall" tabindex ="77" type="radio" value="Not satisfactory">Not satisfactory
+				</p>
+				</ol>
+			</fieldset>
+			
+			<fieldset><legend>General Information</legend>
+				<ol start="9">
+				
+				<li><label for="optInfoCourseOutlineYes">Was the <b>course outline</b> reviewed/explained at the beginning of your course?</label></li>
+
+				<p>
+					<input id="optInfoCourseOutlineYes" name="optInfoCourseOutline" tabindex ="79" type="radio" value="Yes">Yes
+					<input id="optInfoCourseOutlineNo" name="opt" tabindex ="81" type="radio" value="No">No
+					<input id="optInfoCourseOutlineNotSure" name="optInfoCourseOutline" tabindex ="83" type="radio" value="Not sure">Not sure
+				</p>
+
+				<li><label for="optRecommendYes">Would you <b>recommend</b> this course to a friend with the same interests?</label></li>
+				
+				<p>
+					<input id="optRecommendYes" name="Recommend" tabindex ="85" type="radio" value="Yes">Yes
+					<input id="optRecommendNo" name="optRecommend" tabindex ="87" type="radio" value="No">No
+					<input id="optRecommendNotSure" name="optRecommend" tabindex ="89" type="radio" value="Not sure">Not sure
+				</p>
+				</ol>
+			</fieldset>
+
+			<fieldset><legend>Any Other Comments</legend>
+				<ol start="11">
+					<li><label for="txtBestThing">What is the <b>best thing</b> about this course?</label></li>
+
+					<p>
+						<input id ="txtBestThing" maxlength="160" name="txtBestThing" size="50" tabindex="93" type="text" required="required">
+					</p>
+					
+					<li><label for="txtImprove">How could we <b>improve</b> this course?</label></li>
+
+					<p>
+						<input id ="txtImprove" maxlength="160" name="txtImprove" size="50" tabindex="95" type="text" required="required"></textarea>
+					</p>
+
+					<li><label for="txtOther">Other</label></li>
+					
+					<p>
+						<textarea id="txtOther" cols="50" name="txtOther" rows="7" tabindex="97" placeholder="--- Please enter any other useful comments that would help improve this course. ---"></textarea>
+					</p>
+				</ol>
+			</fieldset>
+
+			<div class="centreContent">
+				<label><input name="btnSubmit" tabindex="99" type="submit" value="Submit Feedback"></label>
+				<input name="btnReset" tabindex="101" type="reset" value="Reset Feedback Form">
+			</div>
+		</form>
+
+		<div class="centreContent">
+			<p>
+				<i>Thank you! We pay attention to your feedback!</i>
+			</p>
+
+			<p>
+				<a href="https://learn.utoronto.ca/">Continuing Studies Home Page</a> | <a href="mailto:learn@utoronto.ca">learn@utoronto.ca</a>
+			</p>
+			<p>
+				<a href="../../index.html"><< Back to Index</a>
+			</p>
+		</div>
+	</div>
+
+	<footer>&copy;&nbsp;Trent B Minia - COMP 213 - Winter 2019</footer>
+
+</body>
+
+</html>

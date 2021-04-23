@@ -1,0 +1,369 @@
+/*	
+
+	tm- (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ 
+	
+	Last modified 200527
+
+*/
+
+/*	
+
+	tm- Styling Colours:
+ 
+ 	Main Colour		Blue			#50ffff
+ 	Background1		Carbon Black	#212121
+	Background2		Midnight Black	#0a0a0a
+	Background3		Hover Black		#383838 
+ 	Accent1			Pink			#ff5085 / f26995
+	Accent2			Green			#9fff50
+	Accent3			Orange 			#ff9f50
+ 	Accent4			Yellow			#ffd350
+  
+*/
+
+/* --------------------- */
+/* -= Global Elements =- */
+/* --------------------- */
+ 
+body {
+	align-items: center;
+	background: repeating-linear-gradient(
+		135deg,
+		#070707,
+		#070707 5px,
+		#0a0a0a 5px,
+		#0a0a0a 10px
+	);
+	background-color: #0a0a0a;
+	background-attachment: fixed;
+	color: #ffffff;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 16px;
+	min-width: 480px;
+}
+
+/* Box-Sizing */ 
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* Input */
+
+select, input [type=button], 
+			  [type=number], 
+			  [type=reset], 
+			  [type=submit], 
+			  [type=text],
+			  [type=password],
+			  [type=email] {
+	background: #0a0a0a;
+	border: none;
+	color: #9fff50;
+	font-family: Share Tech Mono, monospace;
+	font-size: 16px;
+	padding: 2px;
+}
+
+input[type=button], [type=reset], [type=submit] {
+	background: #343434;
+	border: none;
+	color: #50ffff;
+	font-family: "Share Tech Mono", monospace;
+	font-size: 16px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+/* Lists */
+
+ul.no-bullet-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Tables */
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: #50ffff;
+	color: #212121;
+}
+
+tr:nth-child(even) {
+	background-color: rgb(255,255,255,0.2);
+}
+
+tr:nth-child(odd) {
+	background-color: rgb(0,0,0,0.4);
+}
+
+/* Text Selection */
+
+::selection {
+	background: #f26995; 
+	color: #212121;
+}
+
+::-moz-selection {
+	background: #f26995;
+	color: #212121;
+}
+
+/* ------------ */
+/* -= Header =- */
+/* ------------ */
+
+/*
+/* Image */
+
+div.image-header {
+	margin: 30px auto 30px auto;
+	max-width: 1024px;
+	min-width: 480px;
+}
+
+img.header { 
+	/* (for use inside div.imageHeader only. image size 1024x100) */
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+/* Navigation Bar */
+
+#mainNavi {
+    position: sticky;
+    top: 0;
+
+    /* Disable Text Selection */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+#mainNavi li {
+    float: left;
+    text-decoration: none;
+}
+
+#ulNavi li a {
+	border-bottom: none;
+    color: white;
+    text-decoration: none;
+}
+
+#ulNavi {
+	border-bottom: 5px solid #ff9f50;
+	max-width: 1024px;
+	min-width: 480px;
+    display: flex;
+	list-style-type: none;
+	margin: 30px auto 30px auto;
+	background-color: #212121;
+	padding: 0;
+}
+
+.title {
+    background-color: #212121;
+    font-weight: bold;
+    font-size: 21px;
+    display: block;
+    color: #ff9f50;
+	text-align: center;
+	padding: 9px 36px 9px 36px;
+}
+
+.item {
+    display: block;
+    color: white;
+	text-align: center;
+	padding: 12px 18px 12px 18px;
+}
+
+#mainNavi .item:hover, #mainNavi .dropbtn:hover {
+    color: #ff9f50;
+    background-color: #383838;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.dropbtn {
+    display: block;
+	text-align: center;
+	padding: 12px 18px 12px 18px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #212121;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #383838;
+}
+
+#mainNavi .dropdown-content a:hover {
+	background-color:#383838;
+	color: #9fff50;
+}
+
+/* ---------------- */
+/* -= Page Title =- */
+/* ---------------- */
+
+div.page-title {
+	background-image: linear-gradient(#191919 21px, #212121);
+	border-top: 5px solid #f26995;
+	max-width: 1024px;
+	margin: 30px auto 30px auto;
+	padding: 10px 10px 10px 20px;
+}
+
+h1 {
+	/* for use inside div.pageTitle */
+	color: #f26995;
+}
+
+h2 {
+	color: #50ffff;
+	font-weight: normal;
+}
+
+/* ------------- */
+/* -= Content =- */
+/* ------------- */
+
+.content-body {
+	background-image: linear-gradient(#191919, #212121);
+	border-top: 5px solid #50ffff;
+	margin: 30px auto 30px auto;
+	max-width: 1024px;
+	min-width: 480px;
+	padding: 10px 10px 60px 10px;
+}
+
+/* Blockquotes */
+
+blockquote {
+	border-left: 0.125em solid #50ffff;
+	margin-left: 10px;
+}
+
+blockquote p {
+	padding-left: 10px;
+}
+
+blockquote q {
+	font-size: 1.125em;
+	font-style: italic;
+	font-weight: bold;
+}
+
+blockquote cite {
+	font-style: normal;	
+}
+
+/* Links */
+
+a, a:visited {
+	border-bottom-style: solid;
+	border-width: thin;
+	color: #ffffff;
+	text-decoration: none;
+	transition-property: color;
+	transition-duration: 0.18s;
+}
+
+a:hover {
+	color: #9fff50;
+}
+
+a:active {
+	color: #f26995;
+	transition-duration: 0s;
+}
+
+/* Text Selection */
+
+content ::selection {
+	background: #50ffff;
+	color: #212121;
+}
+
+content ::-moz-selection {
+	background: #50ffff;
+	color: #212121;
+}
+
+/* ------------ */
+/* -= Footer =- */
+/* ------------ */
+
+.footer-content {
+	background-image: linear-gradient(#191919, #212121);
+	background-color: #212121;
+	border-top: 5px solid #f26995;
+	border-top-style: solid;
+	border-width: 5px;
+	color: #f26995; 
+	font-size: 0.8125em;
+	max-width: 1024px;
+	margin: 30px auto 40px auto;
+	padding: 10px 10px 10px 10px;
+}
+
+/* Links */
+
+.footer-content a, .footer-content a:visited {
+	color: #f26995;
+}
+
+.footer-content a:hover{
+	color: #ffffff;
+}
+
+.footer-content a:active {
+	color: #f26995;
+}
+
+/*
+
+    .          
+   _|________________         
+    |  .--.--. 
+    |  |  |  | 
+  `-`--'  '  `-
+
+*/

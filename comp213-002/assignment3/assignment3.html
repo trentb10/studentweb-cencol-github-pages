@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<!-- Created by Trent B Minia 301041132 | Date 190301 -->
+
+<html lang="en-ca">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Assignment 3 - COMP 213</title>
+<meta content="comp 213, assignment3, html, css, tables, hotspot links" name="keywords">
+<meta content="Assignment 3 for COMP 213 to show that I can use tables, hotspot hyperlinks, text on images, and stuff like that." name="description">
+<link rel="stylesheet" type="text/css" href="../../styles/trentb10-style-legacy.css">
+<style>
+
+.companyLogo, .companyLogo:hover {	
+	border-bottom-style:none;
+	position: absolute; bottom: 4px; right: 10px;
+}
+.imageHeaderText {
+	position: absolute; bottom: 4px; left: 10px;
+	color: white;
+	font-size:50px;
+	font-weight:bold;
+	-webkit-text-stroke: 2px black
+}
+.productImage {
+	display: inline-block;
+	height: auto; 
+	padding: 4px;
+	text-align: center;
+	width: 476px;
+}
+.productDescription {
+	display: inline-block;
+	height: auto;
+	padding: 4px;
+	width: 476px;
+}
+</style>
+</head>
+
+<body>
+
+	<div class="imageHeader" style="background-image:url('images/banner.png'); background-repeat: no-repeat; height: 200px; position: relative;">
+		<a href="https://www.lg.com/ca_en" class="companyLogo"><img src="images/lg-logo.png" alt="life's good logo"></a>
+		<div class="imageHeaderText">LG G7 ThinQ</div>
+	</div>
+	
+	<div class="navigationBar">
+		<a href="../../index.html">Back to Home</a>
+		<a href="#notableFeatures">Features</a>
+		<a href="#availableCarriers">Carriers</a>
+		<a href="#distributors">Local Availability</a>
+		<a href="#">Back to Top</a>
+	</div>
+	
+	<header><h1>LG Electronics Smartphones</h1></header>
+	
+	<div class="mainBody">
+		<h2>G Series - G7 ThinQ</h2>
+		<div class="productImage">
+				<img src="images/lgg7thinq.jpg" alt="LG G7 ThinQ" style="height: 40%; width: 40%;">
+			<p>
+				<a href="details.html">View Larger Picture</a>
+			</p>
+		</div>
+		<div class="productDescription">
+			<p>
+				The LG G7&mdash;officially named the LG G7 ThinQ&mdash;is the latest addition to LG 
+				Electronics' G-series of smartphones. The G7 simply takes smartphone ownership to 
+				the next level. Its slim design allows users to easily keep it in their pocket, and
+				a headphone jack allows them to listen to music with their favourite headphones or
+				earphones on the go!
+			</p>
+			<p id="notableFeatures">
+				Notable Features:
+			</p>
+			<ul>
+				<li>6.1" QHD Display with FullVision</li>
+				<li>16 MP/16 MP rear camera and 8 MP front camera</li>
+				<li>3,000 mAh non-removable battery</li>
+				<li>64GB internal memory; external memory added via microSD&trade; slot</li>
+				<li>2.8GHz Octa-Core processor</li>
+			</ul>
+			<table id="availableCarriers">
+				<tr>
+					<th>Available Carriers</th>
+					<th>Base Price</th>
+				</tr>
+				<tr>
+					<td>Fido</td>
+					<td>$0 on 2-Year XXL Plans</td>
+				</tr>
+				<tr>
+					<td>Freedom Mobile</td>
+					<td>$0 on $50+ Plans</td>
+				</tr>
+				<tr>
+					<td>Telus</td>
+					<td>$0 on Select 2 Year Agreement</td>
+				</tr>
+				<tr>
+					<td>Virgin Mobile</td>
+					<td>$99 on 2-Year Diamond Plans</td>
+				</tr>
+			</table>
+		</div>
+		
+		<h3 id="distributors">Local Availability at Best Buy Locations:</h3>
+		
+		<map id="ImgMap0" name="ImgMap0">
+			<!-- Alberta --> <area alt="" coords="111, 393, 155, 427" href="https://stores.bestbuy.ca/en-ca/ab" shape="rect" target="_blank">
+			<!-- British Columbia --> <area alt="" coords="47, 372, 86, 405" href="https://stores.bestbuy.ca/en-ca/bc" shape="rect" target="_blank">
+			<!-- Ontario --> <area alt="" coords="308, 462, 353, 498" href="https://stores.bestbuy.ca/en-ca/on" shape="rect" target="_blank">
+
+		</map>
+		
+		<img src="images/mapcanada.png" alt="Map of Canada" usemap="#ImgMap0">
+	</div>
+	
+	<footer>Assignment 3 &copy; Trent B Minia - COMP 213 - Winter 2019</footer>
+
+</body>
+
+</html>

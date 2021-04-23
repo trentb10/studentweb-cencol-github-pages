@@ -1,0 +1,58 @@
+body {
+    background-color: #ff9339;
+    font-size: 1.125em;
+    max-width: 720px;
+}
+
+.stats {
+    display: flex;
+}
+
+.stats > div {
+    margin: 5px 20px 5px 20px;
+    text-align: center;
+    min-width: 20px;
+}
+
+.counter {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 120%;
+}
+
+#niceFoodAndGame {
+    background-image: url("images/playground.png");
+    width: 700px; height: 400px;
+}
+
+#annoying {
+    cursor: crosshair;
+    position: relative;
+}
+
+#statusArea {
+    background: #212121;
+    box-sizing: border-box;
+    border: solid 2px #000000;
+    color: #ffffff;
+    padding: 2px;
+    margin: 2px 0 10px 0;
+    text-align: center;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 120%;
+    width: 700px;
+}
+
+#options {
+    text-align: center;
+}
+
+button {
+	background: #212121;
+    border: none;
+    color: #ffffff;
+	font-family: Share Tech Mono, monospace;
+	font-size: 120%;
+	padding: 10px;
+    text-transform: uppercase;
+    transition-duration: 0.2s;
+}

@@ -1,0 +1,318 @@
+/*	
+
+	trentb10 (ﾉ◕ヮ◕)ﾉ*:・ﾟ✧ 
+
+	The trentb10 legacy styling exclusively for assignment 4.
+	I don't exactly remember what I was thinking here using a unique styling set
+	for this assignment specifically, but for now I'll just keep it.
+	
+	Last modified 190708
+
+*/
+
+/*	
+
+	Styling Colours:
+ 
+ 	Main Colour		Blue			#10b6b6
+ 	Background1		Carbon Black	#212121
+ 	Background2		Midnight Black	#0a0a0a
+ 	Accent1			Pink			#f26993
+	Accent2			Green			#76eb15
+	Accent3			Orange 			#ff8016
+ 	Accent4			Yellow			#f9bb00
+  
+*/
+
+/* --------------------- */
+/* -= Global Elements =- */
+/* --------------------- */
+ 
+body {
+	align-items: center;
+	background: repeating-linear-gradient(
+		135deg,
+		#070707,
+		#070707 5px,
+		#0a0a0a 5px,
+		#0a0a0a 10px
+	);
+	background-color: #0a0a0a;
+	background-attachment: fixed;
+	color: #ffffff;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 16px;
+	min-width: 480px
+}
+
+/* Box-Sizing */ 
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/* Input */
+
+select, input [type=button], 
+			  [type=number], 
+			  [type=reset], 
+			  [type=submit], 
+			  [type=text],
+			  [type=password],
+			  [type=email] {
+	background: #0a0a0a;
+	border: none;
+	color: #76eb15;
+	font-family: Share Tech Mono, monospace;
+	font-size: 16px;
+	padding: 2px;
+}
+
+input[type=button], [type=reset], [type=submit] {
+	background: #343434;
+	border: none;
+	color: #10b6b6;
+	font-family: Share Tech Mono, monospace;
+	font-size: 16px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+/* Lists */
+
+ul.no-bullet-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Tables */
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: #10b6b6;
+	color: #212121;
+}
+
+tr:nth-child(even) {
+	background-color: rgb(255,255,255,0.2);
+}
+
+tr:nth-child(odd) {
+	background-color: rgb(0,0,0,0.4);
+}
+
+/* Text Selection */
+
+::selection {
+	background: #f26993; 
+	color: #212121;
+}
+
+::-moz-selection {
+	background: #f26993;
+	color: #212121;
+}
+
+/* ------------ */
+/* -= Header =- */
+/* ------------ */
+
+
+/* Image */
+
+div.image-header {
+	margin: 20px auto 20px auto;
+	max-width: 1024px;
+	min-width: 480px;
+}
+
+img.header { 
+	/* (for use inside div.imageHeader only. image size 1024x100) */
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+
+/* Navigation Bar */
+
+nav.navi-bar {
+	background-color: #212121;
+	border-bottom: 5px solid #f9bb00;
+	border-bottom-style: solid;
+	box-shadow: 0px 5px 2px #000000;
+	color: #212121;
+	display: flex;
+	font-size: 16px;
+	font-weight: bold;
+	height: auto;
+	justify-content: center;
+	margin: 0 auto 30px auto;
+	max-width: 1024px;
+	padding: 10px 5px 10px 5px;
+	position: sticky; top: 0;
+}
+
+nav.navi-bar a {
+	border-bottom-style: none;
+	color: #f9bb00;
+	padding: 0 5px 0 5px;
+	text-align: center;
+}
+
+nav.navi-bar a:hover {
+	color: #10b6b6;
+}
+/*
+nav.mobile-navi {
+
+}
+*/
+ul.navi {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* ---------------- */
+/* -= Page Title =- */
+/* ---------------- */
+
+div.page-title {
+	background-image: linear-gradient(#191919 21px, #212121);
+	border-top: 5px solid #f26993;
+	max-width: 1024px;
+	margin: 30px auto 30px auto;
+	padding: 10px 10px 10px 20px;
+}
+
+h1 {
+	/* for use inside div.pageTitle */
+	color: #f26993;
+}
+
+h2 {
+	color: #10b6b6;
+	font-weight: normal;
+}
+
+/* ------------- */
+/* -= Content =- */
+/* ------------- */
+
+.content-body {
+	background-image: linear-gradient(#191919, #212121);
+	border-top: 5px solid #10b6b6;
+	margin: 30px auto 30px auto;
+	max-width: 1024px;
+	min-width: 480px;
+	padding: 10px 10px 60px 10px;
+}
+
+/* Blockquotes */
+
+blockquote {
+	border-left: 0.125em solid #10b6b6;
+	margin-left: 10px;
+}
+
+blockquote p {
+	padding-left: 10px;
+}
+
+blockquote q {
+	font-size: 1.125em;
+	font-style: italic;
+	font-weight: bold;
+}
+
+blockquote cite {
+	font-style: normal;	
+}
+
+/* Links */
+
+a, a:visited {
+	border-bottom-style: solid;
+	border-width: thin;
+	color: #ffffff;
+	text-decoration: none;
+	transition-property: color;
+	transition-duration: 0.18s;
+}
+
+a:hover {
+	color: #76eb15;
+}
+
+a:active {
+	color: #f26993;
+	transition-duration: 0s;
+}
+
+/* Text Selection */
+
+content ::selection {
+	background: #10b6b6;
+	color: #212121;
+}
+
+content ::-moz-selection {
+	background: #10b6b6;
+	color: #212121;
+}
+
+/* ------------ */
+/* -= Footer =- */
+/* ------------ */
+
+.footer-content {
+	background-image: linear-gradient(#191919, #212121);
+	background-color: #212121;
+	border-top: 5px solid #f26993;
+	border-top-style: solid;
+	border-width: 5px;
+	color: #f26993; 
+	font-size: 0.8125em;
+	max-width: 1024px;
+	margin: 30px auto 21px auto;
+	padding: 10px 10px 10px 10px;
+}
+
+/* Links */
+
+.footer-content a, .footer-content a:visited {
+	color: #f26993;
+}
+
+.footer-content a:hover{
+	color: #ffffff;
+}
+
+.footer-content a:active {
+	color: #f26993;
+}
+
+/*
+
+    .          
+   _|________________         
+    |  .--.--. 
+    |  |  |  | 
+  `-`--'  '  `-
+
+*/
